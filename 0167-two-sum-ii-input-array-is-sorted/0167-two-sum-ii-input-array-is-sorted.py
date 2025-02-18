@@ -4,10 +4,8 @@ class Solution:
         while r>l:
             if x[l]+x[r]>target:
                 r-=1
-                continue
             elif x[l]+x[r]<target:
                 l+=1
-                continue
             else:
                 return [l+1,r+1]
 
