@@ -5,10 +5,10 @@ class Solution:
             if x[l]+x[r]>target:
                 r-=1
                 continue
-            if x[l]+x[r]<target:
+            elif x[l]+x[r]<target:
                 l+=1
                 continue
-            if x[l]+x[r]==target:
+            else:
                 return [l+1,r+1]
 
         
